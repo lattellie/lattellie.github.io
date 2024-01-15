@@ -366,6 +366,7 @@ nav ul li a:hover::after{
 /* ================================================= Projects ================================================================================ */
 .project-c{
     padding-left: 5%;
+    min-width: fit-content;
     width: 70%;
     align-items: center;
     justify-content: left;
@@ -380,6 +381,7 @@ nav ul li a:hover::after{
 }
 .gallery-row{
     width: 70%;
+    min-width: fit-content;
     display: inline-block;
 }
 .gallery-row h1{
@@ -391,7 +393,8 @@ nav ul li a:hover::after{
     /* width: 100%; */
     position: relative;
     display: inline-block;
-    width: 400px;
+    min-width: 400px;
+    /* width: 400px; */
     overflow: hidden;
     margin-right: min(100px, 6%);
     border-radius: 10px;
