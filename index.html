@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie's Personal Website</title>
+    <link rel="stylesheet" href="style.css">    
+    <link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/457c0a10c0.js" crossorigin="anonymous"></script>
+</head>
+<body onload="init_values()">
+    <nav>
+        <img src="image/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <div id="header">
+        <div class="container">
+            <div class="home-row">
+                <h1 class="hellomessage"><span>Hello!</span> My name is</h1>
+                <div class="keyboard">
+                    <span class="kb" onclick="keypress(1)" onmouseover="makePressed()" onmouseout="releasePressed()"><i>E</i></span>
+                    <span class="kb" onclick="keypress(2)" onmouseover="makePressed()" onmouseout="releasePressed()"><i>L</i></span>
+                    <span class="kb" onclick="keypress(3)" onmouseover="makePressed()" onmouseout="releasePressed()"><i>L</i></span>
+                    <span class="kb" onclick="keypress(4)" onmouseover="makePressed()" onmouseout="releasePressed()"><i>I</i></span>
+                    <span class="kb" onclick="keypress(5)" onmouseover="makePressed()" onmouseout="releasePressed()"><i>E</i></span>
+                </div>
+                <div class="contacts">
+                    <a href="https://github.com/lattellie"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/elliehu-js/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto: elliehu.js@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="gallery2">
+                <div class="box2" onmouseover="displayexpand2(this)">
+                    <img src="image/photobooth.jpg" alt="" class="box-img">
+                    <div class="box2-intro">
+                        <h3>4Cut <br>Photobooth <br> Program</h3>
+                        <h3 class="language">Python</h3>
+                        <p>OpenCV</p>
+                        <p>PIL</p>
+                        <p>Numpy</p>
+                    </div>
+                    <div class="box2-content">
+                        <h3>4Cut Photobooth</h3>
+                        <p class="program-intro">A program that takes photos and generate 4 cut photos from it,
+                            where users can choose their photos, frames and filters.
+                        </p>
+                        <h2 class="demo-video"><a href="https://www.youtube.com/watch?v=6C3kmSIcLf0">Video Demo</a></h2>
+                    </div>
+                    <div class="box2-bg"></div>
+                </div>
+                <div class="box2" onmouseover="displayexpand2(this)">
+                    <img src="image/waste.png" alt="" class="box-img">
+                    <div class="box2-intro">
+                        <h3>ML Waste <br> Classification <br> App</h3>
+                        <h3 class="language">Dart</h3>
+                        <h3 class="language">Python</h3>
+                        <p>PyTorch</p>
+                        <p>Panda</p>
+                        <p>PIL</p>
+                        <p>Fine-Tuning</p>
+                        <p>ConvNext</p>
+                    </div>
+                    <div class="box2-content">
+                        <h3>Machine Learning Waste Classification App</h3>
+                        <p class="program-intro">User can take photos of their waste and the App will classify the waste
+                            into the correct recycling bins.
+                        </p>
+                        <p>My Work: Building ML Models by fine-tuning the ConvNext model & The frontend design of the App</p>
+                        <h2 class="demo-video"><a href="https://www.youtube.com/watch?v=rs-ACSjr6CI">Video Demo</a></h2>
+                    </div>
+                    <div class="box2-bg"></div>
+                </div>
+                <div class="box2" onmouseover="displayexpand2(this)">
+                    <img src="image/music1.png" alt="" class="box-img">
+                    <div class="box2-intro">
+                        <h3>Music Sheet<br>Editing <br>Software</h3>
+                        <h3 class="language">Java</h3>
+                        <p>JUnit</p>
+                        <p>Java AWT</p>
+                        <p>Java Swing</p>
+                    </div>
+                    <div class="box2-content">
+                        <h3>Music Sheet Editing Software</h3>
+                        <p class="program-intro">User can create, edit, and play out the music they wrote.
+                        </p>
+                        <h2 class="demo-video"><a href="https://youtu.be/QHfo0nYNJPs?si=48BcV7uoK7K_gPGR">Video Demo</a></h2>
+                    </div>
+                    <div class="box2-bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container-portfolio">
+            <div class="container project-c">
+                <div class="gallery-row">
+                    <h1>Programming Portfolio</h1>
+                    <div class="gallery2">
+                        <div class="box2 cl1" onmouseover="displayexpand2(this)">
+                            <img src="image/photobooth.jpg" alt="" class="box-img">
+                            <div class="box2-intro">
+                                <h3>4Cut <br>Photobooth <br> Program</h3>
+                                <h3 class="language">Python</h3>
+                                <p>OpenCV</p>
+                                <p>PIL</p>
+                                <p>Numpy</p>
+                            </div>
+                            <div class="box2-content">
+                                <h3>4Cut Photobooth</h3>
+                                <p class="program-intro">A program that takes photos and generate 4 cut photos from it,
+                                    where users can choose their photos, frames and filters.
+                                </p>
+                                <h2 class="demo-video"><a href="https://www.youtube.com/watch?v=6C3kmSIcLf0">Video Demo</a></h2>
+                            </div>
+                            <div class="box2-bg"></div>
+                        </div>
+                        <div class="box2 cl2" onmouseover="displayexpand2(this)">
+                            <img src="image/waste.png" alt="" class="box-img">
+                            <div class="box2-intro">
+                                <h3>ML Waste <br> Classification <br> App</h3>
+                                <h3 class="language">Dart</h3>
+                                <h3 class="language">Python</h3>
+                                <p>PyTorch</p>
+                                <p>Panda</p>
+                                <p>PIL</p>
+                                <p>Fine-Tuning</p>
+                                <p>ConvNext</p>
+                            </div>
+                            <div class="box2-content">
+                                <h3>Machine Learning Waste Classification App</h3>
+                                <p class="program-intro">User can take photos of their waste and the App will classify the waste
+                                    into the correct recycling bins.
+                                </p>
+                                <p>My Work: Building ML Models by fine-tuning the ConvNext model & The frontend design of the App</p>
+                                <h2 class="demo-video"><a href="https://www.youtube.com/watch?v=rs-ACSjr6CI">Video Demo</a></h2>
+                            </div>
+                            <div class="box2-bg"></div>
+                        </div>
+                        <div class="box2 cl3" onmouseover="displayexpand2(this)">
+                            <img src="image/music1.png" alt="" class="box-img">
+                            <div class="box2-intro">
+                                <h3>Music Sheet<br>Editing <br>Software</h3>
+                                <h3 class="language">Java</h3>
+                                <p>JUnit</p>
+                                <p>Java AWT</p>
+                                <p>Java Swing</p>
+                            </div>
+                            <div class="box2-content">
+                                <h3>Music Sheet Editing Software</h3>
+                                <p class="program-intro">User can create, edit, and play out the music they wrote.
+                                </p>
+                                <h2 class="demo-video"><a href="https://youtu.be/QHfo0nYNJPs?si=48BcV7uoK7K_gPGR">Video Demo</a></h2>
+                            </div>
+                            <div class="box2-bg"></div>
+                        </div>
+                        <div class="box2 cl1" onmouseover="displayexpand2(this)">
+                            <img src="image/music2.png" alt="" class="box-img">
+                            <div class="box2-intro">
+                                <h3>MuseScore <br> Music Sheet<br>Typing Helper <br>Software</h3>
+                                <h3 class="language">Java</h3>
+                                <p>JUnit</p>
+                                <p>Java AWT - Robot</p>
+                                <p>Java Swing</p>
+                                <p>Java Midi</p>
+                            </div>
+                            <div class="box2-content">
+                                <h3>MuseScore Music Sheet Typing Helper Software</h3>
+                                <p class="program-intro">User can type music in MuseScore faster by using certain keys on the computer keyboard 
+                                    as the keys on the piano. 
+                                </p>
+                                <!-- <h2 class="demo-video"><a href="https://youtu.be/QHfo0nYNJPs?si=48BcV7uoK7K_gPGR">Video Demo</a></h2> -->
+                            </div>
+                            <div class="box2-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arts-display">
+                <h1>Arts Portfolio</h1>
+                <div class="art-box">
+                    <img src="image/artPosts/1.png" alt="" id="art-portfolio-display-img">
+                    <div class="leftright">
+                        <div class="leftRightIcon"><i class="fa-solid fa-caret-left" onclick="displayPrevImg()"></i></div>
+                        <div class="leftRightIcon"><i class="fa-solid fa-caret-right" onclick="displayNextImg()"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="experience">
+        <div class="container">
+            <div class="experience-table">s
+                <ul class="job-exp">
+                    <li><span>UI/UX</span>
+                        <br>Designing web/ app interfaces
+                    </li>
+                    <li><span>Web development</span>
+                        <br>Web app development
+                    </li>
+                    <li><span>App development</span>
+                        <br>Mobile app development
+                    </li>
+                </ul>
+                
+                <ul class="ext-exp">
+                    <li><span>UI/UX</span>
+                        <br>Designing web/ app interfaces
+                    </li>
+                    <li><span>Web development</span>
+                        <br>Web app development
+                    </li>
+                    <li><span>App development</span>
+                        <br>Mobile app development
+                    </li>
+                </ul>
+            </div>
+<!-- job / extracurricular / skills / volunteer / work -->
+            
+        </div>
+    </div>
+</body>
+<script>
+    var currImgId = 1;
+    var maxImgId = 8;
+    function init_values() {
+        currImgId = 1;
+    }
+    var kbs = document.getElementsByClassName("kb");
+    function generateRandomColor(rand) {
+        // Generate random values for red, green, and blue components
+        var red = 255-(Math.floor(Math.random() * 30)+rand);
+        var green = 255-(Math.floor(Math.random() * 30)+rand);
+        var blue = 255-(Math.floor(Math.random() * 30)+rand);
+
+        // Construct the RGB color string
+        var randomColor = `rgb(${red},${green},${blue})`;
+
+        return randomColor;
+    }
+    function makePressed() {
+        var currclasslist = event.currentTarget.classList;
+        event.currentTarget.classList.add("pressed");
+    }
+    function releasePressed() {
+        var currclasslist = event.currentTarget.classList;
+        event.currentTarget.classList.remove("pressed");
+    }
+    var pressList = [0,0,0,0,0,0];
+    function keypress(n) {
+        // console.log(pressList);
+        if(pressList[n]==1) {
+            document.documentElement.style.setProperty('--color-bg', '#cfcfcd');
+            document.documentElement.style.setProperty('--theme2', '#829DB4');
+            document.documentElement.style.setProperty('--theme3', '#7B6760');
+            document.documentElement.style.setProperty('--theme1', '#C86D4C');
+            document.documentElement.style.setProperty('--theme4', '#463e3e');
+            document.documentElement.style.setProperty('--color-text', '#fff');
+            // for (p of pressList) {
+            //     p = 0;
+            // }
+            // pressList[n] = 0;
+            pressList = [0,0,0,0,0,0];
+        } else {
+            pressList[n] = 1;
+            if(n==1) {
+                document.documentElement.style.setProperty('--color-bg', '#345C72');
+                document.documentElement.style.setProperty('--theme2', '#D4EDF4');
+                document.documentElement.style.setProperty('--theme3', '#FF9E7A');
+                document.documentElement.style.setProperty('--theme1', '#E6CAA5');
+                document.documentElement.style.setProperty('--theme4', '#fff');
+                document.documentElement.style.setProperty('--color-text', '#2A2E30');
+            }
+            if(n==2) {
+                document.documentElement.style.setProperty('--color-bg', '#fea510');
+                document.documentElement.style.setProperty('--theme1', '#d62d20');
+                document.documentElement.style.setProperty('--theme2', '#0e57e5');
+                document.documentElement.style.setProperty('--theme3', '#008645');
+                document.documentElement.style.setProperty('--theme4', '#fff');
+                document.documentElement.style.setProperty('--color-text', '#fff');
+            }
+            if(n==3) {
+                document.documentElement.style.setProperty('--color-bg', '#291b25');
+                document.documentElement.style.setProperty('--theme1', '#61A6AB');
+                document.documentElement.style.setProperty('--theme3', '#FFCE6D');
+                document.documentElement.style.setProperty('--theme4', '#F6F6E9');
+                document.documentElement.style.setProperty('--theme2', '#ED5B2D');
+                document.documentElement.style.setProperty('--color-text', '#291b25');
+            }
+               
+            if(n==4) {
+                document.documentElement.style.setProperty('--theme2', '#FFF4BD');
+                document.documentElement.style.setProperty('--theme3', '#C4E3E6');
+                document.documentElement.style.setProperty('--theme1', '#F4B9B8');
+                document.documentElement.style.setProperty('--color-bg', '#6E6295');
+                document.documentElement.style.setProperty('--theme4', '#fff');
+                document.documentElement.style.setProperty('--color-text', '#6E6295');
+            }
+            if(n==5) {
+                document.documentElement.style.setProperty('--color-bg', '#3D3D3D');
+                document.documentElement.style.setProperty('--theme1', '#829DB4');
+                document.documentElement.style.setProperty('--theme3', '#6D6D6D');
+                document.documentElement.style.setProperty('--theme4', '#fff');
+                document.documentElement.style.setProperty('--theme2', '#947F57');
+                document.documentElement.style.setProperty('--color-text', '#fff');
+            } 
+        }
+        
+
+    }
+    
+    function displayNextImg() {
+        var currPic = document.getElementById("art-portfolio-display-img");
+        console.log(currPic);
+        if (currImgId == maxImgId) {
+            currImgId = 1;
+        } else {
+            currImgId = currImgId +1;
+        }
+        currPic.src=`image/artPosts/${currImgId}.png`;
+    }
+    function displayPrevImg() {
+        var currPic = document.getElementById("art-portfolio-display-img");
+        console.log(currPic);
+        if (currImgId == 1) {
+            currImgId = maxImgId;
+        } else {
+            currImgId = currImgId -1;
+        }
+        currPic.src=`image/artPosts/${currImgId}.png`;
+    }
+
+    var boxes = document.getElementsByClassName("box2");
+    function displayexpand2(currBox) {
+        // for(box of boxes) {
+        //     box.style.width='150px';
+        // }
+        // currBox.style.width='300px';
+    }
+
+</script>
+</html>
