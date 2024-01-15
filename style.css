@@ -365,9 +365,18 @@ nav ul li a:hover::after{
 }
 /* ================================================= Projects ================================================================================ */
 .project-c{
+    padding-left: 5%;
     width: 70%;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+}
+.gallery-port{
+    width: 50%;
+    min-width: fit-content;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 .gallery-row{
     width: 70%;
