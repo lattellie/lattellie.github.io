@@ -6,6 +6,7 @@
     <title>Ellie's Personal Website</title>
     <link rel="stylesheet" href="style.css">    
     <link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Amari' rel='stylesheet'> -->
     <script src="https://kit.fontawesome.com/457c0a10c0.js" crossorigin="anonymous"></script>
 </head>
 <body onload="init_values()">
@@ -15,7 +16,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#projects">Portfolio</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <!-- <li><a href="#resume">Resume</a></li> -->
         </ul>
     </nav>
     <div id="header">
@@ -197,35 +198,102 @@
     </div>
     <div id="experience">
         <div class="container">
-            <div class="experience-table">s
-                <ul class="job-exp">
-                    <li><span>UI/UX</span>
-                        <br>Designing web/ app interfaces
-                    </li>
-                    <li><span>Web development</span>
-                        <br>Web app development
-                    </li>
-                    <li><span>App development</span>
-                        <br>Mobile app development
-                    </li>
-                </ul>
-                
-                <ul class="ext-exp">
-                    <li><span>UI/UX</span>
-                        <br>Designing web/ app interfaces
-                    </li>
-                    <li><span>Web development</span>
-                        <br>Web app development
-                    </li>
-                    <li><span>App development</span>
-                        <br>Mobile app development
-                    </li>
-                </ul>
+            <div class="gallery-exp">
+                <div class="box3" onmouseover="displayexpand3(this)">
+                    <img src="image/csnm.jpg" alt="" class="box3-img">
+                    <div class="box3-intro">
+                        <h3>Work <br>Experience</h3>
+                        <ul>
+                            <li><span class="title">Data Analyst</span>
+                                <span class="year">Jan 2024 - Current</span>
+                                <span class="employer">UBC Earth, Ocean and Atmospheric Sciences</span>
+                                <p>Using MATLAB to visualize the annual ocean data and analyze the trends across the years.
+                                    The 2023's plot will be published in 
+                                    <a href="https://sogdatacentre.ca/atlas/">the Strait of Georgia Atlas</a>
+                                </p>
+                            </li>
+                            <!-- <li><span class="title">Machine Learning Intern</span>
+                                <span class="year">Dec 2023 - Current</span>
+                                <span class="employer">Taron Solution</span>
+                                <p>Designing web/ app interfaces</p>
+                            </li> -->
+                            <li><span class="title">Resident Advisor</span>
+                                <span class="year">Aug 2023 - Current</span>
+                                <span class="employer">UBC Student Housing</span>
+                                <p>Create monthly programs for residents to build up supportive communities.
+                                    Refer residents to proper resources to solve problems they face in residence, 
+                                    such as roommate conflicts, academic difficulties, and mental health. 
+                                </p>
+                            </li>
+                            <li><span class="title">Chief Editor</span>
+                                <span class="year">Nov 2021 - June 2022</span>
+                                <span class="employer">HSNU Yearbook production team</span>
+                                <p>Create monthly programs for residents to build up supportive communities.
+                                    Refer residents to proper resources to solve problems they face in residence, 
+                                    such as roommate conflicts, academic difficulties, and mental health. 
+                                </p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="box3-bg"></div>
+                </div>
+                <div class="box3" onmouseover="displayexpand3(this)">
+                    <img src="image/extracur.jpg" alt="" class="box3-img">
+                    <div class="box3-intro">
+                        <h3>Technical<br>Experience</h3>
+                        <li><span class="title">AI4GoodLab</span>
+                            <span class="year">May - June 2023</span>
+                            <p> Learned and deployed machine learning skills, including CNN, RNN, PCA, Transformer, 
+                                and reinforcement learning. Applied fine-tuning techniques on a pre-trained model (convNext)
+                                that achieved 94% accuracy on the testing data with 26 categories.
+                            </p>
+                        </li>
+                        <li><span class="title">1st place - UBC FirstByte Datathon</span>
+                            <span class="year">Feb 2023</span>
+                            <p> Used R and Excel to find the cause of the high attrition rate of a credit card company.
+                                Identified a targeted demographic that causes more than 96% of the unusual attrition rate.  
+                            </p>
+                        </li>
+                        <li><span class="title">UBC GirlCode Hackathon</span>
+                            <span class="year">Jan 2023</span>
+                            <p> Created a program using Python that takes in the image of a face and presents the best-fit color palette
+                                for the customer to enhance the shopping experience in Aritzia. Used the Google Mediapipe framework to locate 
+                                the faces in the uploaded picture.
+                            </p>
+                        </li>
+                    </div>
+                    <div class="box3-bg"></div>
+                </div>
+                <div class="box3" onmouseover="displayexpand3(this)">
+                    <img src="image/volunteer.jpg" alt="" class="box3-img">
+                    <div class="box3-intro">
+                        <h3>Volunteer<br>Work</h3>
+                        <li><span class="title">UBC Sprouts Cafe Volunteer</span>
+                            <span class="year">Feb 2023 - current</span>
+                            <span class="employer">UBC Sprouts</span>
+                            <p>Efficiently work with 5 others to prepare food for 60 students each week, including 
+                                30 free meals, on a timely manner.
+                            </p>
+                        </li>
+                        <li><span class="title">Leader of design team</span>
+                            <span class="year">Sep 2020 - June 2021</span>
+                            <span class="employer">HSNU Merch Design Team</span>
+                            <p>Led a group of 14 to complete the design of our annual merch.
+                                Cooperate with people from other departments to host 3 major 
+                                annual school events with 3000+ participants. 
+
+                            </p>
+                        </li>
+                    </div>
+                    <div class="box3-bg"></div>
+                </div>
             </div>
 <!-- job / extracurricular / skills / volunteer / work -->
             
         </div>
     </div>
+
 </body>
 <script>
     var currImgId = 1;

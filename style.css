@@ -17,6 +17,7 @@
     --theme3: #7B6760;
     --theme4: #463e3e;
     --color-text: #fff;
+    --transparent: rgba(0,0,0,0);
 }
 
 html{
@@ -26,6 +27,8 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Amiri'; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-family: 'Courier New', Courier;
     /* font-family: 'Trebuchet MS', sans-serif; */
 }
@@ -115,6 +118,7 @@ nav ul li a:hover::after{
 }
 .container{
     width:100%;
+    min-height: 550px;
     height: 100vh;
     background: var(--colorbg);
     display:flex;
@@ -225,6 +229,7 @@ nav ul li a:hover::after{
 .gallery2{
     width: 50%;
     min-width: fit-content;
+    min-height: fit-content;
     margin-right: 10px;
     display: flex;
     align-items: center;
@@ -419,6 +424,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
 }
 .container-portfolio{
+    min-height: fit-content;
     width:100%;
     height: 100vh;
     background: var(--colorbg);
@@ -444,4 +450,172 @@ nav ul li a:hover::after{
 
 .experience-table{
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.experience-table ul img{
+    width:180px;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.experience-table ul:hover img{
+    opacity:0;
+    height: 0px;
+}
+.experience-table ul{
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 80vh;
+    background: var(--theme1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: width 0.5s;
+}
+.experience-table ul:hover{
+    width: 500px;
+}
+.experience-table ul li{
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+}
+.experience-table ul:hover li{
+    height:fit-content;
+}
+.experience-table ul:nth-child(2){
+    background: var(--theme2);
+}
+.experience-table ul:nth-child(3){
+    background: var(--theme3);
+}
+.experience-table li{
+    display: block;
+}
+.experience-table li span{
+    display: block;
+}
+.experience-title{
+    font-family: 'Rammetto One';
+    text-decoration: none;
+}
+span.title{
+    text-decoration: double;
+    padding: 5px;
+    margin: 5px 0px;
+    width: fit-content;
+    background: var(--theme4);
+    color: var(--color-bg);
+    border-radius: 10px;
+    transform: translateX(-5px);
+}
+/* ====================================================== exp-2 ========================================================== */
+.gallery-exp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.box3{
+    position: relative;
+    width:220px;
+    height: 80vh;
+    margin: 10px;
+    border-radius: 10px;
+    transition: width 0.8s,border-radius 0.5s;
+}
+
+.box3:hover{
+    width:500px;
+}
+.box3-img {
+    position: relative;
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.box3-intro{
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+    left:0;
+    top: 0;
+    margin-top: 50px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width:inherit;
+}
+.box3-intro h3{
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px;
+    width: inherit;
+    color: var(--theme4);
+    background: var(--color-bg);
+    font-family: 'Rammetto One';
+    transition: 
+        background 0.5s;
+}
+.box3-intro li{
+    margin-top: 20px;
+    padding-right: 40px;
+    margin-left: 300px;
+    display: block;
+    text-align: left;
+    width: 500px;
+    color: var(--color-text);
+    transition: 0.5s;
+}
+.box3:hover .box3-intro{
+   margin-top: 20px;
+}
+.box3:hover .box3-intro li{
+    margin-left: 20px;
+}
+.box3-intro li span.year{
+    color: var(--color-text);
+    /* display: block; */
+}
+.box3-intro li span.employer{
+    margin-top: 10px;
+    color: var(--theme4);
+    display: block;
+}
+.box3-intro li p{
+    margin-top: 10px;
+    color: var(--color-text);
+    display: block;
+}
+/* 
+.box3:hover .box3-intro h3{
+    color: var(--color-text);
+    background: var(--transparent);
+} */
+.box3-bg{
+    z-index: 10;
+    border-radius: inherit;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:inherit;
+    height:inherit;
+    opacity: 0;
+    background: var(--theme1);
+    transition: 
+        opacity 0.5s;
+}
+span.year{
+    color:var(--theme4);
+}
+.box3:hover .box3-bg{
+    opacity: 0.95;
+}
+.box3:nth-child(3) .box3-bg{
+    background: var(--theme2);
+}
+.box3:nth-child(2) .box3-bg{
+    background: var(--theme3);
 }
